@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbunDetail from './AlbunDetail';
 export default class AlbunList extends Component {
@@ -16,6 +16,6 @@ export default class AlbunList extends Component {
   }
 
   render() {
-    return <View>{this.renderAlbuns()}</View>;
+    return <ScrollView>{this.renderAlbuns()}</ScrollView>;
   }
 }
